@@ -53,6 +53,26 @@ def two_int_math(num1,num2):
 	return f"The sum is {num1+num2}"
 
 
+def grade_wording():
+	"""
+	"""
+	grade = input("Enter The Grade (O,A,B,C,F):")
+	if grade == 'O':
+		print("Outstanding!")
+	elif grade == 'A':
+		print("Very Good!")
+	elif grade == 'B':
+		print("Good!")
+	elif grade == 'C':
+		print("Average!")
+	elif grade == 'F':
+		print("FAIL!")
+	else:
+		print("Invalid Grade entered. Enter any of  (O,A,B,C,F)")
+
+
+
+
 
 
 	
