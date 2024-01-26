@@ -70,7 +70,32 @@ def grade_wording():
 	else:
 		print("Invalid Grade entered. Enter any of  (O,A,B,C,F)")
 
-
+def find_type():
+	"""
+	>>> Program1.find_type()
+Enter the character:a
+a is alphabet
+>>> Program1.find_type()
+Enter the character:3
+3 is digit
+>>>
+>>> Program1.find_type()
+Enter the character:d3
+char is neither alphabet nor digit nor whitespace
+>>>
+>>> Program1.find_type()
+Enter the character:
+  is space
+	"""
+	char = input("Enter the character:")
+	if char.isalpha():
+		print(f'The enetered character {char} is alphabet')
+	elif char.isdigit():
+		print(f'The enetered character {char} is digit')
+	elif char.isspace():
+		print(f'The enetered character {char} is space')
+	else:
+		print("char is neither alphabet nor digit nor whitespace")
 
 
 
