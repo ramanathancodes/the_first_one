@@ -98,6 +98,23 @@ Enter the character:
 		print("char is neither alphabet nor digit nor whitespace")
 
 
+def count_type():
+	"""
+	>>> Program1.count_type()
+Enter string:RaMaNatHaN4449
+lower_count is 5 and  upper_count is 5 and digit_count is 4
+
+>>> Program1.count_type()
+Enter string:RaMaNatHaN
+lower_count is 5 and  upper_count is 5 and digit_count is 0
+	"""
+	my_string = input("Enter string:")
+	lower_count = sum(1 for char in my_string if char.islower())
+	upper_count = sum(1 for char in my_string if char.isupper())
+	digit_count = sum(1 for char in my_string if char.isdigit())
+	print(f"lower_count is {lower_count} and  upper_count is {upper_count} and digit_count is {digit_count}")
+
+
 
 
 	
