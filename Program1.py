@@ -55,6 +55,16 @@ def two_int_math(num1,num2):
 
 def grade_wording():
 	"""
+	Print The grade in words when grade symbol is given as input
+
+	Args:
+		Nil
+
+	Returns:
+		str: Grade in words
+
+	Example:
+		>>>Program1.grade_wording()
 	"""
 	grade = input("Enter The Grade (O,A,B,C,F):")
 	if grade == 'O':
@@ -72,41 +82,60 @@ def grade_wording():
 
 def find_type():
 	"""
-	>>> Program1.find_type()
-Enter the character:a
-a is alphabet
->>> Program1.find_type()
-Enter the character:3
-3 is digit
->>>
->>> Program1.find_type()
-Enter the character:d3
-char is neither alphabet nor digit nor whitespace
->>>
->>> Program1.find_type()
-Enter the character:
-  is space
+	Find the type of char given as input
+
+	Args:
+		Nil
+
+	Returns:
+		str: The characted type is printed
+
+	Example:
+		>>> Program1.find_type()
+		Enter the character:R
+		The entered character R is alphabet and in Uppercase
+		>>> Program1.find_type()
+		Enter the character:c
+		The entered character c is alphabet and in Lowercase
+		>>> Program1.find_type()
+		Enter the character:2
+		The entered character 2 is digit
+		>>> Program1.find_type()
+		Enter the character:
+		The entered character   is space
 	"""
 	char = input("Enter the character:")
 	if char.isalpha():
-		print(f'The enetered character {char} is alphabet')
+		if char.isupper():
+			print(f'The entered character {char} is alphabet and in Uppercase')
+		elif char.islower():
+			print(f'The entered character {char} is alphabet and in Lowercase')
 	elif char.isdigit():
-		print(f'The enetered character {char} is digit')
+		print(f'The entered character {char} is digit')
 	elif char.isspace():
-		print(f'The enetered character {char} is space')
+		print(f'The entered character {char} is space')
 	else:
 		print("char is neither alphabet nor digit nor whitespace")
 
 
 def count_type():
 	"""
-	>>> Program1.count_type()
-Enter string:RaMaNatHaN4449
-lower_count is 5 and  upper_count is 5 and digit_count is 4
+	Count each type of char given as input
 
->>> Program1.count_type()
-Enter string:RaMaNatHaN
-lower_count is 5 and  upper_count is 5 and digit_count is 0
+	Args:
+		Nil
+
+	Returns:
+		str: The characted type count is printed
+
+	Example:
+	>>> Program1.count_type()
+		Enter string:RaMaNatHaN4449
+		lower_count is 5 and  upper_count is 5 and digit_count is 4
+
+		>>> Program1.count_type()
+		Enter string:RaMaNatHaN
+		lower_count is 5 and  upper_count is 5 and digit_count is 0
 	"""
 	my_string = input("Enter string:")
 	lower_count = sum(1 for char in my_string if char.islower())
