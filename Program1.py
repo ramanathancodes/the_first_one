@@ -143,6 +143,43 @@ def count_type():
 	digit_count = sum(1 for char in my_string if char.isdigit())
 	print(f"lower_count is {lower_count} and  upper_count is {upper_count} and digit_count is {digit_count}")
 
+def guess_the_number():
+	'''
+	Guess the  number being number is always 99
+
+	Args:
+		Nil
+
+	Returns:
+		"Congratulations" is number is 99 n
+		If not 99 but less , say incorrect 
+		if not 99 but more , say to try lower number
+
+	Example:
+		>>>Program1.guess_the_number()
+		Guess the number!:12
+		The number is incorrect, Try again!
+		Guess the number!:23
+		The number is incorrect, Try again!
+		Guess the number!:45
+		The number is incorrect, Try again!
+		Guess the number!:3444
+		Try a lower number!
+		Guess the number!:34
+		The number is incorrect, Try again!
+		Guess the number!:99
+		Congrats, The number is correct
+	'''
+
+	while 1:
+		guess = int(input("Guess the number!:"))
+		if guess == 99:
+			print("Congrats, The number is correct")
+			break
+		elif guess < 99:
+			print("The number is incorrect, Try again!")
+		else:
+			print("Try a lower number!")
 
 
 
