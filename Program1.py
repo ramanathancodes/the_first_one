@@ -181,6 +181,54 @@ def guess_the_number():
 		else:
 			print("Try a lower number!")
 
+def cafe_menu():
+	'''
+	offer Cofee or Soup in cafe - Testing nested if loops
+
+	Args:
+		Nil
+
+	Returns:
+		"Sub choices if any , if not confirmation of order"
+
+	Example:
+		>>> Program1.cafe_menu()
+			Enter 1 for Coffee or 2 for Soup: 1
+			Enter 1 for Milk or 2 for No Milk: 1
+			Enter 1 for Coldmilk or 2 for Hotmilk: 1
+			Thanks for order!
+			>>> Program1.cafe_menu()
+			Enter 1 for Coffee or 2 for Soup: 1
+			Enter 1 for Milk or 2 for No Milk: 2
+			Thanks for order!
+			>>> Program1.cafe_menu()
+			Enter 1 for Coffee or 2 for Soup: 2
+			Enter 1 for Veg Soup or 2 for Chicken Soup: 1
+			Thanks for order!
+			>>> Program1.cafe_menu()
+			Enter 1 for Coffee or 2 for Soup: 2
+			Enter 1 for Veg Soup or 2 for Chicken Soup: 2
+			Enter 1 for Country chiken or 2 for Broiler chicken: 1
+			Thanks for order!
+		>>>
+
+
+	'''
+
+	choice = int(input("Enter 1 for Coffee or 2 for Soup: "))
+	if choice == 1:
+		sub_choice = int(input("Enter 1 for Milk or 2 for No Milk: "))
+		if sub_choice == 1:
+			sub_choice_2 = int(input("Enter 1 for Coldmilk or 2 for Hotmilk: "))
+	else:
+		sub_choice = int(input("Enter 1 for Veg Soup or 2 for Chicken Soup: "))
+		if sub_choice == 2:
+			sub_choice_2 = int(input("Enter 1 for Country chiken or 2 for Broiler chicken: "))
+
+	print("Thanks for order!")
+
+
+
 
 
 	
