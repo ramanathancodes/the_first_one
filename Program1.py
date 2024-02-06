@@ -228,8 +228,95 @@ def cafe_menu():
 	print("Thanks for order!")
 
 
+def generate_natural_no_series_1(num):
+
+	'''
+	Generate natural numbers series upto input using if loop
+	All positive numbers are natural numbers 
+	Natural num + 0 are caled whole numbers 
+
+	Args:
+		num
+
+	Returns:
+		Natural number series in same line
+
+	Example:
+		>>> Program1.generate_natural_no_series_1(10)
+		>>> 1 2 3 4 5 6 7 8 9 10
+	'''
+
+	start = 1
+	while num > 0:
+		print(start,end=' ')
+		num -= 1
+		start +=1
 
 
+def generate_natural_no_series_2(num):
 
-	
+	'''
+	Generate natural numbers series upto input using for loop
+	All positive numbers are natural numbers 
+	Natural num + 0 are caled whole numbers 
+
+	Args:
+		num
+
+	Returns:
+		Natural number series in same line
+
+	Example:
+		>>> Program1.generate_natural_no_series_2(10)
+		>>> 1 2 3 4 5 6 7 8 9 10
+	'''
+
+	for each in range(1,num+1):
+		print(each,end=' ')
+
+
+def is_leap_year(year):
+	'''
+	Any year divisble by 4 , its a leap year 
+	if not not a leap year .
+
+	Args:
+		Year 
+
+	Returns: 
+		String denoting leap year or not 
+
+	Example:
+			>>> Program1.is_leap_year(2024)
+			2024 is a leap year
+			>>> Program1.is_leap_year(2023)
+			2023 is not a leap year
+
+	'''
+
+	if year%4 == 0:
+		print("{} is a leap year".format(year))
+	else:
+		print("{} is not a leap year".format(year))	
+
+
+def find_avg_first_n_num(num):
+
+	'''
+	Find avg of first n numbers.
+	avg of 3 = n1+n2+n3 / 2 
+
+	Args:
+		num
+
+	Returns:
+		sum of all first n numbers / n  
+
+	Example:
+		>>> Program1.find_avg_first_n_num(12)
+		>>> 6.5
+	'''
+
+	print("The average of first {} numbers is {}".format(num,(1/num * sum(each for each in range(1,num+1)))))
+
 
