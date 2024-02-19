@@ -320,3 +320,55 @@ def find_avg_first_n_num(num):
 	print("The average of first {} numbers is {}".format(num,(1/num * sum(each for each in range(1,num+1)))))
 
 
+def sum_of_series_1(num):
+
+	'''
+	Find the sum of series for n 
+	1²/1 + 2²/2 + 3² +...+n²/2 
+
+	Args:
+		num
+
+	Returns:
+		sum of series 
+
+	Example:
+		>>> Program1.sum_of_series_1(1)
+		The average of first 1 numbers is 1.0
+		>>> Program1.sum_of_series_1(2)
+		The average of first 2 numbers is 3.0
+		>>> Program1.sum_of_series_1(3)
+		The average of first 3 numbers is 6.0
+
+	'''
+
+	print("The average of first {} numbers is {}".format(num,(sum(each**2/each for each in range(1,num+1)))))
+
+
+def num_square_cube(num):
+
+	'''
+			print (number , its square , its Cube)
+			for range (1,n)
+
+	Args:
+		num
+
+	Returns:
+		number , its square , its Cube
+
+	Example:
+		>>> Program1.num_square_cube(1)
+		The average of first 1 numbers is 1.0
+		>>> Program1.num_square_cube(2)
+		The average of first 2 numbers is 3.0
+		>>> Program1.num_square_cube(3)
+		The average of first 3 numbers is 6.0
+
+	'''
+
+	result = [(each, each**2, each**3) for each in range(1, num + 1)]
+	print(result)
+
+
+
